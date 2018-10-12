@@ -11,7 +11,7 @@ import Foundation
 class AnimeListServiceImp : AnimeListService {
     
     var dataStore: DataStore
-    
+
     init(dataStore : DataStore) {
         self.dataStore = dataStore
     }

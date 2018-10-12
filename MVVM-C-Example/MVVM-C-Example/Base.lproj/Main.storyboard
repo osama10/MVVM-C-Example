@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Anime Detail View Controller-->
         <scene sceneID="ffc-qe-sjd">
             <objects>
-                <viewController id="ySo-aB-fC5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimeDetailViewCoordinator" id="ySo-aB-fC5" customClass="AnimeDetailViewController" customModule="MVVM_C_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pMv-5I-vPo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S3Z-Di-bIT"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="eLG-Uw-wzm" id="KlP-7t-Vdn"/>
+                        <outlet property="imageView" destination="Iul-1h-iY8" id="bga-bw-mmo"/>
+                        <outlet property="titleLabel" destination="c72-8t-HTo" id="STG-zH-4Ab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4p-0Q-ufo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

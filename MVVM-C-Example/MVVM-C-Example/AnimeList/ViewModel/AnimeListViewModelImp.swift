@@ -12,7 +12,11 @@ class AnimeListViewModelImp : AnimeListViewModel {
 
     var data: [AnimeModel]?
     var service: AnimeListService
-    var coordinatorDelegate: AnimeListViewModelCoordinatorDelegate?
+    var title: String{
+        return "Top Animes"
+    }
+    weak var coordinatorDelegate: AnimeListViewModelCoordinatorDelegate?
+    
     
     var showData: (() -> ())?
     var showLoader: (() -> ())?
@@ -48,8 +52,8 @@ class AnimeListViewModelImp : AnimeListViewModel {
     func getAnimeName(at index: Int) -> String {
         return self.data![index].name
     }
+   
     private func getData(){
-        
         self.service.getAnimeList { [weak self](data) in
             guard let `self` = self else { return }
             self.data = data

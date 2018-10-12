@@ -11,12 +11,10 @@ import UIKit
 
 class AnimeListCoordinator: Coordinator {
     
-    var rootViewController: UINavigationController!
-    
+    weak var rootViewController: UINavigationController!
     var dataStore : DataStore
-    
     var window : UIWindow?
-
+    var detailViewCoordinator : AnimeDetailViewCoordinator!
     
     init( window : UIWindow, dataStore : DataStore) {
         self.dataStore = dataStore
@@ -29,15 +27,24 @@ class AnimeListCoordinator: Coordinator {
         rootViewController = UINavigationController(rootViewController: listVC)
         let service = AnimeListServiceImp(dataStore: self.dataStore)
         let viewModel = AnimeListViewModelImp(service: service)
+        viewModel.coordinatorDelegate = self
         listVC.viewModel = viewModel
         self.window?.rootViewController = rootViewController
     }
 }
 
-extension AnimeListCoordinator : StoryboardInitializable {
+extension AnimeListCoordinator : AnimeListViewModelCoordinatorDelegate{
+    func didTapOnRow(with data: AnimeModel) {
+        detailViewCoordinator = AnimeDetailViewCoordinator(navigationController: self.rootViewController, data: data)
+        detailViewCoordinator.start()
+    }
+}
 
- 
+extension AnimeListCoordinator : StoryboardInitializable {
     static var storyboardName: UIStoryboard.Storyboard {
         return .main
     }
 }
+
+
+

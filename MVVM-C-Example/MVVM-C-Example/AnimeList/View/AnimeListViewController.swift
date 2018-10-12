@@ -18,6 +18,7 @@ class AnimeListViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.bindUI()
+        self.title = self.viewModel.title
         self.viewModel.viewDidLoad()
     }
     
@@ -45,6 +46,6 @@ extension AnimeListViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.viewModel.didTapOnAnime(of: indexPath.row)
     }
 }

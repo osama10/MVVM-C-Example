@@ -8,15 +8,16 @@
 
 import Foundation
 
-protocol AnimeListViewModelCoordinatorDelegate {
+protocol AnimeListViewModelCoordinatorDelegate : class{
     func didTapOnRow(with data : AnimeModel)
 }
 
-protocol AnimeListViewModel {
+protocol AnimeListViewModel : class{
     
     var data : [AnimeModel]?{ get }
     var service : AnimeListService{ get }
     var coordinatorDelegate : AnimeListViewModelCoordinatorDelegate?{get set}
+    var title : String{ get }
     
     var showData : (()->())?{ get set}
     var showLoader : (()->())?{get set}

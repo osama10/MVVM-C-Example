@@ -8,20 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		4A597ADC216F6C8D00D4A36D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597ADB216F6C8D00D4A36D /* AppDelegate.swift */; };
-		4A597ADE216F6C8D00D4A36D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597ADD216F6C8D00D4A36D /* ViewController.swift */; };
 		4A597AE1216F6C8D00D4A36D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A597ADF216F6C8D00D4A36D /* Main.storyboard */; };
 		4A597AE3216F6C8E00D4A36D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A597AE2216F6C8E00D4A36D /* Assets.xcassets */; };
 		4A597AE6216F6C8E00D4A36D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A597AE4216F6C8E00D4A36D /* LaunchScreen.storyboard */; };
+		4A597AEF217081DA00D4A36D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597AEE217081DA00D4A36D /* DataStore.swift */; };
+		4A597AF32170827B00D4A36D /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597AF22170827B00D4A36D /* AnimeModel.swift */; };
+		4A597AF62170830700D4A36D /* DataSotreImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597AF52170830700D4A36D /* DataSotreImp.swift */; };
+		4A597B032170AFB800D4A36D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B022170AFB800D4A36D /* Coordinator.swift */; };
+		4A597B062170AFEE00D4A36D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B052170AFEE00D4A36D /* AppCoordinator.swift */; };
+		4A597B082170B67700D4A36D /* AnimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B072170B67700D4A36D /* AnimeListViewController.swift */; };
+		4A597B0A2170B68F00D4A36D /* AnimeListViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B092170B68F00D4A36D /* AnimeListViewModelImp.swift */; };
+		4A597B0E2170B6FC00D4A36D /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B0D2170B6FC00D4A36D /* AnimeListViewModel.swift */; };
+		4A597B112170B7F300D4A36D /* AnimeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B102170B7F300D4A36D /* AnimeListService.swift */; };
+		4A597B132170C5DF00D4A36D /* AnimeListServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B122170C5DF00D4A36D /* AnimeListServiceImp.swift */; };
+		4A597B152170D5EF00D4A36D /* AnimeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B142170D5EF00D4A36D /* AnimeListCoordinator.swift */; };
+		4A597B192170D75F00D4A36D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B182170D75F00D4A36D /* Protocols.swift */; };
+		4A597B1B2170D7AE00D4A36D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A597B1A2170D7AE00D4A36D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A597AD8216F6C8D00D4A36D /* MVVM-C-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A597ADB216F6C8D00D4A36D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A597ADD216F6C8D00D4A36D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A597AE0216F6C8D00D4A36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A597AE2216F6C8E00D4A36D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A597AE5216F6C8E00D4A36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A597AE7216F6C8E00D4A36D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A597AEE217081DA00D4A36D /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		4A597AF22170827B00D4A36D /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		4A597AF52170830700D4A36D /* DataSotreImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSotreImp.swift; sourceTree = "<group>"; };
+		4A597B022170AFB800D4A36D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4A597B052170AFEE00D4A36D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4A597B072170B67700D4A36D /* AnimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewController.swift; sourceTree = "<group>"; };
+		4A597B092170B68F00D4A36D /* AnimeListViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModelImp.swift; sourceTree = "<group>"; };
+		4A597B0D2170B6FC00D4A36D /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
+		4A597B102170B7F300D4A36D /* AnimeListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListService.swift; sourceTree = "<group>"; };
+		4A597B122170C5DF00D4A36D /* AnimeListServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListServiceImp.swift; sourceTree = "<group>"; };
+		4A597B142170D5EF00D4A36D /* AnimeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListCoordinator.swift; sourceTree = "<group>"; };
+		4A597B182170D75F00D4A36D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		4A597B1A2170D7AE00D4A36D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +78,194 @@
 		4A597ADA216F6C8D00D4A36D /* MVVM-C-Example */ = {
 			isa = PBXGroup;
 			children = (
+				4A597B172170D70900D4A36D /* Extension */,
+				4A597B162170D70100D4A36D /* Protocol */,
+				4A597B002170AF9600D4A36D /* BaseCoordinator */,
+				4A597AED217081B900D4A36D /* DataStore */,
+				4A597AF821708C2B00D4A36D /* AnimeDetail */,
+				4A597AF721708C1C00D4A36D /* AnimeList */,
 				4A597ADB216F6C8D00D4A36D /* AppDelegate.swift */,
-				4A597ADD216F6C8D00D4A36D /* ViewController.swift */,
 				4A597ADF216F6C8D00D4A36D /* Main.storyboard */,
 				4A597AE2216F6C8E00D4A36D /* Assets.xcassets */,
 				4A597AE4216F6C8E00D4A36D /* LaunchScreen.storyboard */,
 				4A597AE7216F6C8E00D4A36D /* Info.plist */,
 			);
 			path = "MVVM-C-Example";
+			sourceTree = "<group>";
+		};
+		4A597AED217081B900D4A36D /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				4A597AF4217082EC00D4A36D /* Manager */,
+				4A597AF12170826500D4A36D /* Model */,
+				4A597AF02170825500D4A36D /* Contract */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		4A597AF02170825500D4A36D /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				4A597AEE217081DA00D4A36D /* DataStore.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		4A597AF12170826500D4A36D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A597AF22170827B00D4A36D /* AnimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A597AF4217082EC00D4A36D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4A597AF52170830700D4A36D /* DataSotreImp.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		4A597AF721708C1C00D4A36D /* AnimeList */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B0B2170B6A500D4A36D /* Contracts */,
+				4A597AFC21708D4D00D4A36D /* Service */,
+				4A597AFB21708D4600D4A36D /* Coordinator */,
+				4A597AFA21708D3200D4A36D /* View */,
+				4A597AF921708D0D00D4A36D /* ViewModel */,
+			);
+			path = AnimeList;
+			sourceTree = "<group>";
+		};
+		4A597AF821708C2B00D4A36D /* AnimeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4A597AFF21708D6F00D4A36D /* Coordinator */,
+				4A597AFE21708D6900D4A36D /* View */,
+				4A597AFD21708D5C00D4A36D /* ViewModel */,
+			);
+			path = AnimeDetail;
+			sourceTree = "<group>";
+		};
+		4A597AF921708D0D00D4A36D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B092170B68F00D4A36D /* AnimeListViewModelImp.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A597AFA21708D3200D4A36D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B072170B67700D4A36D /* AnimeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A597AFB21708D4600D4A36D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B142170D5EF00D4A36D /* AnimeListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4A597AFC21708D4D00D4A36D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B122170C5DF00D4A36D /* AnimeListServiceImp.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4A597AFD21708D5C00D4A36D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A597AFE21708D6900D4A36D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A597AFF21708D6F00D4A36D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4A597B002170AF9600D4A36D /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B042170AFD300D4A36D /* AppCoordinator */,
+				4A597B012170AFA800D4A36D /* Contract */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		4A597B012170AFA800D4A36D /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B022170AFB800D4A36D /* Coordinator.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		4A597B042170AFD300D4A36D /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B052170AFEE00D4A36D /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		4A597B0B2170B6A500D4A36D /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B0F2170B7D600D4A36D /* Service */,
+				4A597B0C2170B6E500D4A36D /* ViewModel */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		4A597B0C2170B6E500D4A36D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B0D2170B6FC00D4A36D /* AnimeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A597B0F2170B7D600D4A36D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B102170B7F300D4A36D /* AnimeListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4A597B162170D70100D4A36D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B182170D75F00D4A36D /* Protocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4A597B172170D70900D4A36D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A597B1A2170D7AE00D4A36D /* Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +339,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A597ADE216F6C8D00D4A36D /* ViewController.swift in Sources */,
+				4A597B062170AFEE00D4A36D /* AppCoordinator.swift in Sources */,
+				4A597AF62170830700D4A36D /* DataSotreImp.swift in Sources */,
+				4A597B112170B7F300D4A36D /* AnimeListService.swift in Sources */,
+				4A597B152170D5EF00D4A36D /* AnimeListCoordinator.swift in Sources */,
+				4A597B132170C5DF00D4A36D /* AnimeListServiceImp.swift in Sources */,
+				4A597AEF217081DA00D4A36D /* DataStore.swift in Sources */,
+				4A597B082170B67700D4A36D /* AnimeListViewController.swift in Sources */,
+				4A597B032170AFB800D4A36D /* Coordinator.swift in Sources */,
+				4A597B0A2170B68F00D4A36D /* AnimeListViewModelImp.swift in Sources */,
+				4A597B192170D75F00D4A36D /* Protocols.swift in Sources */,
+				4A597AF32170827B00D4A36D /* AnimeModel.swift in Sources */,
+				4A597B0E2170B6FC00D4A36D /* AnimeListViewModel.swift in Sources */,
 				4A597ADC216F6C8D00D4A36D /* AppDelegate.swift in Sources */,
+				4A597B1B2170D7AE00D4A36D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

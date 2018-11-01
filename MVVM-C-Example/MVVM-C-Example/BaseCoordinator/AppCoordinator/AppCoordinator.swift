@@ -11,7 +11,7 @@ import UIKit
 
 final class AppCoordinator : Coordinator{
     
-    weak var window : UIWindow?
+    //weak var window : UIWindow?
     
    lazy var dataStore : DataStore = {
         return DataStoreImp()
@@ -19,13 +19,9 @@ final class AppCoordinator : Coordinator{
     
     var listCoordinator : AnimeListCoordinator!
     
-    init(window : UIWindow) {
-        self.window = window
-    }
-    
-    func start() {
-        guard let window = self.window else { return }
-        listCoordinator = AnimeListCoordinator(window: window, dataStore: dataStore)
-        listCoordinator.start()
+    func start()->UIViewController{
+        listCoordinator = AnimeListCoordinator(dataStore: dataStore)
+        let mainVC = listCoordinator.start()
+        return mainVC
     }
 }

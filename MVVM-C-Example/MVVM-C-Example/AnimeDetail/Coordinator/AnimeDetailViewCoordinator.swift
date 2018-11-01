@@ -19,11 +19,11 @@ class AnimeDetailViewCoordinator : Coordinator{
         self.data = data
     }
     
-    func start() {
+    func start()->UIViewController{
         let detailVC = AnimeDetailViewCoordinator.instantiateViewController() as! AnimeDetailViewController
         let viewModel = AnimeDetailViewModelImp(data: self.data)
         detailVC.viewModel = viewModel
-        self.navigationController.pushViewController(detailVC, animated: true)
+        return detailVC
     }
 }
 

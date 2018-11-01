@@ -13,15 +13,13 @@ class AnimeListCoordinator: Coordinator {
     
     weak var rootViewController: UINavigationController!
     var dataStore : DataStore
-    var window : UIWindow?
     var detailViewCoordinator : AnimeDetailViewCoordinator!
     
-    init( window : UIWindow, dataStore : DataStore) {
+    init( dataStore : DataStore) {
         self.dataStore = dataStore
-        self.window = window
     }
     
-    func start() {
+    func start()->UIViewController{
         
         let listVC = AnimeListCoordinator.instantiateViewController() as! AnimeListViewController
         rootViewController = UINavigationController(rootViewController: listVC)
@@ -29,14 +27,15 @@ class AnimeListCoordinator: Coordinator {
         let viewModel = AnimeListViewModelImp(service: service)
         viewModel.coordinatorDelegate = self
         listVC.viewModel = viewModel
-        self.window?.rootViewController = rootViewController
+        return rootViewController
     }
 }
 
 extension AnimeListCoordinator : AnimeListViewModelCoordinatorDelegate{
     func didTapOnRow(with data: AnimeModel) {
         detailViewCoordinator = AnimeDetailViewCoordinator(navigationController: self.rootViewController, data: data)
-        detailViewCoordinator.start()
+        let detailVC = detailViewCoordinator.start()
+        self.rootViewController.pushViewController(detailVC, animated: true)
     }
 }
 

@@ -6,7 +6,7 @@ It's simple master and detailview application that's developed using MVVM-C patt
 
 Compbining co-ordinator with it, further reduces ViewController's responsibilty by taking out the navigation logic from it too and making it completely dumb and reusable.
 
-## Benifits
+## Benefits
 - Avoids Massive-ViewControllers
 - Keep UI as dumb as possible
 - Define single responsibility to each module

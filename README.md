@@ -13,6 +13,6 @@ Compbining co-ordinator with it, further reduces ViewController's responsibilty 
 - Works best with reactive-frameworks such as RX-Swift
 
 ## Get in touch
-I am always open to constructive suggestions and feedback. You can find me at [**LinkedIn**](https://www.linkedin.com/in/osama-bin-bashir-225199118/) or contact me @[**osama.binbashir@yahoo.com**](osama.binbashir@yahoo.com) 
+I am always open to constructive suggestions and feedback. You can find me at [**LinkedIn**](https://www.linkedin.com/in/osama-bin-bashir-225199118/) or contact me @[**osama.binbashir@yahoo.com**] 
 
 

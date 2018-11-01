@@ -11,17 +11,23 @@ import UIKit
 
 final class AppCoordinator : Coordinator{
     
-    //weak var window : UIWindow?
+    private var window : UIWindow?
     
    lazy var dataStore : DataStore = {
         return DataStoreImp()
     }()
     
+    init(window : UIWindow) {
+        self.window = window
+    }
     var listCoordinator : AnimeListCoordinator!
     
+    @discardableResult
     func start()->UIViewController{
         listCoordinator = AnimeListCoordinator(dataStore: dataStore)
         let mainVC = listCoordinator.start()
+        self.window?.rootViewController = mainVC
+        self.window?.makeKeyAndVisible()
         return mainVC
     }
 }

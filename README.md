@@ -20,6 +20,6 @@ Combining **co-ordinator** with it, further reduces ViewController's responsibil
 Thanks [**furqanmk**](https://github.com/furqanmk) for code review and pointing out improvements
 
 ## Get in touch
-I am always open to constructive suggestions and feedback. You can find me at [**LinkedIn**](https://www.linkedin.com/in/osama-bin-bashir-225199118/) or contact me @ **osama.binbashir@yahoo.com**
+I am always open to constructive suggestions and feedback. You can find me at [**LinkedIn**](https://www.linkedin.com/in/osama-bin-bashir-225199118/), [**Stack Overflow**](https://stackoverflow.com/users/5889956/osama) or you can contact me @ **osama.binbashir@yahoo.com**
 
 
